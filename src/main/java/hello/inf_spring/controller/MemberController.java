@@ -7,7 +7,10 @@ import org.springframework.stereotype.Controller;
 @Controller
 public class MemberController {
 
-    private final MemberService memberService;
+    // 별로 선호하지 않는 필드주입 방식
+    // @Autowired private MemberService memberService;
+
+    private MemberService memberService;
 
     @Autowired
     public MemberController(MemberService memberService) {
