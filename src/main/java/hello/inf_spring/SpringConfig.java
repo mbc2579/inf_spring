@@ -17,6 +17,7 @@ public class SpringConfig {
 
     private EntityManager em;
 
+    @Autowired
     public SpringConfig(EntityManager em) {
         this.em = em;
     }
